@@ -208,4 +208,69 @@ body {
 
 /*********************************/
 
+/*********************************/
+#title {
+    color: white;
+    background-color: #B06328;
+    display: flex;
+
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    width: 300px;
+    height: 80px;
+
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+#lineBreaker {
+    box-shadow: rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+/*********************************/
+
+#workExperiences {
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#GitHubIcon {
+    margin-bottom: 60px;
+}
+/*********************************/
+
+/*********************************/
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+
+    }
+}
+#title, #lineBreaker, #workExperiences {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+
   
