@@ -56,6 +56,8 @@ body {
 #topBar {
     color: white;
     background-color: #2B3137;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
 #topBar ul {
     display: flex;
@@ -103,6 +105,7 @@ body {
     #pictureFrame {
         position: relative;
         width: 325px;
+        min-width: 325px;
         height: 453px;
     }
     #pictureFrame #frame {
@@ -197,7 +200,7 @@ body {
         border: none;
         /* font-family: "Comic Sans"; */
         font-size: 20px;
-        line-height: 1;
+        line-height: 1.6;
         padding-left: 1rem;
         margin: 0;
         resize: none;
