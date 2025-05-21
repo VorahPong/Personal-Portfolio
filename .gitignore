@@ -1,0 +1,27 @@
+# Node modules (Browsersync and other npm packages)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (if you ever add build tools)
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+
+# Optional: VSCode settings
+.vscode/
+
+# Environment files (if you ever add dotenv config)
+.env
+
+# Docker-related
+*.tar
+*.pid
+
+# Ignore coverage reports (if you add testing later)
+coverage/
