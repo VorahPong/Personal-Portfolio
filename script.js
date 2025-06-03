@@ -66,3 +66,20 @@ showMoreCUCapstone.addEventListener("click", () => {
     });
 
 });
+
+//
+const showMore3DConnectFourGame = document.getElementById('showMore3DConnectFourGame');
+showMore3DConnectFourGame.addEventListener('click', () => {
+    showMore3DConnectFourGame.style.visibility = "hidden";
+
+    const connectFourGameExtraContent = document.getElementById('3DConnectFourGameExtraContent');
+    connectFourGameExtraContent.style.display = "block";
+
+    const showLess3DConnectFourGame = document.getElementById('showLess3DConnectFourGame');
+    showLess3DConnectFourGame.addEventListener('click', () => {
+        connectFourGameExtraContent.style.display = "none";
+        showMore3DConnectFourGame.style.visibility = "visible";
+
+    });
+    
+});
