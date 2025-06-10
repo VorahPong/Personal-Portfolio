@@ -10,10 +10,24 @@ contactInfo.addEventListener("click", () => {
   });
 
 
+// Nav Bar stuff
+const featuredContent = document.getElementById('featuredContent');
+
+const resumeButton = document.getElementById('resumeButton');
+resumeButton.addEventListener('click', () => {
+    featuredContent.style.display = "none";
+});
+
+const homeButton = document.getElementById('homeButton');
+homeButton.addEventListener('click', () => {
+    featuredContent.style.display = "block";
+});
+
+
 // Show more for CU Capstone project
 const showMoreCUCapstone = document.getElementById('showMoreCUCapstone');
 showMoreCUCapstone.addEventListener("click", () => {
-    showMoreCUCapstone.style.visibility = "hidden";
+    showMoreCUCapstone.style.display = "none";
 
     const CUCapstoneExtraContent = document.getElementById('CUCapstoneExtraContent');
     CUCapstoneExtraContent.style.display = "block";
@@ -21,7 +35,7 @@ showMoreCUCapstone.addEventListener("click", () => {
     const showLessCUCapstone = document.getElementById('showLessCUCapstone');
     showLessCUCapstone.addEventListener('click', () => {
         CUCapstoneExtraContent.style.display = "none";
-        showMoreCUCapstone.style.visibility = "visible";
+        showMoreCUCapstone.style.display = "flex";
 
         // Scroll back
         const CUCapstone = document.getElementById('CUCapstone');
@@ -33,7 +47,7 @@ showMoreCUCapstone.addEventListener("click", () => {
 //
 const showMore3DConnectFourGame = document.getElementById('showMore3DConnectFourGame');
 showMore3DConnectFourGame.addEventListener('click', () => {
-    showMore3DConnectFourGame.style.visibility = "hidden";
+    showMore3DConnectFourGame.style.display = "none";
 
     const connectFourGameExtraContent = document.getElementById('3DConnectFourGameExtraContent');
     connectFourGameExtraContent.style.display = "block";
@@ -41,7 +55,7 @@ showMore3DConnectFourGame.addEventListener('click', () => {
     const showLess3DConnectFourGame = document.getElementById('showLess3DConnectFourGame');
     showLess3DConnectFourGame.addEventListener('click', () => {
         connectFourGameExtraContent.style.display = "none";
-        showMore3DConnectFourGame.style.visibility = "visible";
+        showMore3DConnectFourGame.style.display = "flex";
 
     });
     
