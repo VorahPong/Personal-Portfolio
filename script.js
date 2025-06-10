@@ -11,16 +11,22 @@ contactInfo.addEventListener("click", () => {
 
 
 // Nav Bar stuff
-const featuredContent = document.getElementById('featuredContent');
+const homeContent = document.getElementById('homeContent');
+const resumeContent = document.getElementById('resumeContent');
+
 
 const resumeButton = document.getElementById('resumeButton');
 resumeButton.addEventListener('click', () => {
-    featuredContent.style.display = "none";
+    homeContent.style.display = "none";
+    resumeContent.style.display = "flex";
+    
 });
 
 const homeButton = document.getElementById('homeButton');
 homeButton.addEventListener('click', () => {
-    featuredContent.style.display = "block";
+    resumeContent.style.display = "none";
+    homeContent.style.display = "block";
+
 });
 
 
